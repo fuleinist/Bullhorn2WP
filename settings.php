@@ -90,7 +90,7 @@ class Bullhorn_Settings {
 	 * Adds a link to the Bullhorn to the Settings menu
 	 */
 	public static function menu() {
-		add_options_page( 'Bullhorn', __( 'Bullhorn', 'bh-staffing-job-listing-and-cv-upload-for-wp' ), 'manage_options', 'bullhorn', array( __CLASS__, 'settings_page' ) );
+		add_options_page( 'Bullhorn', __( 'Bullhorn', 'bh-staffing-job-listing-and-cv-upload-for-wp' ), 'manage_options', 'bullhorn', array( __CLASS__, 'bh_settings_page' ) );
 	}
 
 	/**
@@ -508,7 +508,7 @@ class Bullhorn_Settings {
 	/**
 	 * Output the main settings page with the title and form
 	 */
-	public static function settings_page() {
+	public static function bh_settings_page() {
 		?>
 		<div class="wrap">
 			<div id="icon-options-general" class="icon32"><br></div>
